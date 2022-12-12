@@ -67,7 +67,7 @@ export default {
     <header>
         <div class="container">
 
-            <a href="#">
+            <a href="#" class="logo">
                 <img :src="logo" alt="logo">
             </a>
 
@@ -87,30 +87,42 @@ export default {
 
 header {
     height: 95px;
-    padding: 10px 0;
+    line-height: 95px;
 
     .container {
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
-    img {
-        height: 65px;
-    }
+        .logo {
+            display: flex;
+        }
 
-    ul {
-        display: flex;
+        .logo img {
+            height: 65px;
+            line-height: 95px;
+        }
 
-        li a {
-            padding: 0 10px;
-            font-size: $font-medium;
-            color: $text-nav;
+        nav ul {
+            display: flex;
 
-            &.active {
-                border-bottom: 1px solid #0282f9;
+            li {
+
+                font-size: $font-medium;
+                padding-inline: 15px;
+
+                &:hover {
+                    border-bottom: 4px solid $primary;
+                }
+
+                a {
+                    color: $text-nav;
+                }
             }
         }
     }
+
+
 }
 </style>

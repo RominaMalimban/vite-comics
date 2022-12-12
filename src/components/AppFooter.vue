@@ -164,7 +164,6 @@ footer {
             }
         }
 
-
     }
 
     // SECTION 2
