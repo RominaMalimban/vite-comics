@@ -4,33 +4,6 @@ export default {
     data() {
         return {
             // backGroundLogo: "img/dc-logo-bg.png",
-            items: [
-                {
-                    img: "/img/buy-comics-digital-comics.png",
-                    text: "DIGITAL COMICS",
-                    url: "#"
-                },
-                {
-                    img: "/img/buy-comics-merchandise.png",
-                    text: "DC MERCHANDISE",
-                    url: "#"
-                },
-                {
-                    img: "/img/buy-comics-subscriptions.png",
-                    text: "SUBSCRIPTION",
-                    url: "#"
-                },
-                {
-                    img: "/img/buy-comics-shop-locator.png",
-                    text: "COMIC CHOP LOCATOR",
-                    url: "#"
-                },
-                {
-                    img: "/img/buy-dc-power-visa.svg",
-                    text: "DC POWER VISA",
-                    url: "#"
-                }
-            ],
             comics: [
                 "Characters",
                 "Comics",
@@ -79,17 +52,8 @@ export default {
 
 <template>
     <footer>
-        <!-- section 1 -->
-        <section class="merchandise">
-            <ul class="container">
-                <li v-for="item in items">
-                    <img :src="item.img" alt="">
-                    <a :href="item.url">{{ item.text }}</a>
-                </li>
-            </ul>
-        </section>
 
-        <!-- section 2 -->
+        <!-- section 1 -->
         <section class="links">
             <div class="container">
                 <div class="col">
@@ -133,7 +97,7 @@ export default {
 
         </section>
 
-        <!-- section 3 -->
+        <!-- section 2 -->
         <section class="sub-footer">
 
             <div class="container">
@@ -162,37 +126,7 @@ export default {
 
 footer {
 
-    // SECTION 1 
-    .merchandise {
-        background-color: $primary;
-        height: 125px;
-
-        .container {
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 40px;
-
-            li {
-                display: flex;
-                align-items: center;
-                padding-inline: 10px;
-            }
-
-            a {
-                padding-left: 5px;
-                font-size: $font-medium;
-                color: $text-white;
-            }
-
-            img {
-                height: 50px;
-            }
-        }
-    }
-
-    // SECTION 2 
+    // SECTION 1
     .links {
         background-image: url(../../public/img/footer-bg.jpg);
         background-size: cover;
@@ -233,7 +167,7 @@ footer {
 
     }
 
-    // SECTION 3
+    // SECTION 2
     .sub-footer {
         height: 90px;
         background-color: #303030;
