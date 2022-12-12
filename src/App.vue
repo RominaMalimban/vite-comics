@@ -14,7 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "./styles/partials/variables" as *;
 @use "./styles/generals.scss" as *;
 </style>
