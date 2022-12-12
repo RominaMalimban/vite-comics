@@ -88,8 +88,6 @@ export default {
 header {
     height: 95px;
     padding: 10px 0;
-    // debug
-    border: 1px solid black;
 
     .container {
         display: flex;
@@ -102,14 +100,11 @@ header {
     }
 
     ul {
-        list-style: none;
-        height: 100%;
         display: flex;
 
         li a {
-            text-decoration: none;
             padding: 0 10px;
-            font-size: 13px;
+            font-size: $font-medium;
             color: $text-nav;
 
             &.active {
