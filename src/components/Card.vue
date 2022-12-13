@@ -10,13 +10,13 @@ export default {
 
 <template>
 
+    <!-- card -->
     <div class="card">
         <div>
             <img :src="thumb.thumb" :alt="thumb.series">
         </div>
         <h4>{{ thumb.series }}</h4>
     </div>
-
 
 </template>
 

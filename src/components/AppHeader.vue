@@ -88,6 +88,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 
 header {
     height: 95px;
@@ -95,9 +96,7 @@ header {
 
     .container {
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include space-between;
 
         .logo {
             display: flex;
@@ -118,7 +117,7 @@ header {
 
                 &:hover,
                 &.active {
-                    border-bottom: 4px solid $primary;
+                    border-bottom: 6px solid $primary;
                 }
 
                 a {
@@ -127,7 +126,5 @@ header {
             }
         }
     }
-
-
 }
 </style>

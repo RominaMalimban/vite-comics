@@ -50,32 +50,30 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 
 .merchandise {
     background-color: $primary;
     height: 125px;
 
     .container {
+        @include space-between;
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 10px 40px;
 
         li {
-            display: flex;
-            align-items: center;
+            @include center;
             padding-inline: 10px;
-        }
 
-        a {
-            padding-left: 5px;
-            font-size: $font-medium;
-            color: $text-white;
-        }
+            img {
+                height: 50px;
+            }
 
-        img {
-            height: 50px;
+            a {
+                padding-left: 5px;
+                font-size: $font-medium;
+                color: $text-white;
+            }
         }
     }
 }

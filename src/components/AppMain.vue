@@ -92,9 +92,11 @@ export default {
     <main>
         <div class="container">
 
+            <!-- contenitore padre che contiene singola card -->
             <div class="cards">
                 <Card v-for="card in cards" :thumb="card" />
             </div>
+
 
         </div>
     </main>
@@ -112,8 +114,8 @@ main {
         .cards {
             display: flex;
             flex-wrap: wrap;
-            margin-inline: -10px;
-            padding: 50px 0;
+            margin-inline: -15px;
+            padding: 30px 0;
         }
     }
 }
