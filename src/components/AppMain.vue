@@ -92,12 +92,16 @@ export default {
     <main>
         <div class="container">
 
+            <!-- bottone current -->
+            <a href="#" class="button current">CURRENT SERIES</a>
+
             <!-- contenitore padre che contiene singola card -->
             <div class="cards">
                 <Card v-for="card in cards" :thumb="card" />
             </div>
 
-
+            <!-- bottone load -->
+            <a href="#" class="button load">LOAD MORE</a>
         </div>
     </main>
 </template>
@@ -110,12 +114,34 @@ main {
 
     .container {
         color: $text-white;
+        text-align: center;
+        padding: 30px 0;
+        position: relative;
 
         .cards {
             display: flex;
             flex-wrap: wrap;
             margin-inline: -15px;
-            padding: 30px 0;
+
+        }
+
+        .button {
+            display: inline-block;
+            color: $text-white;
+            font-weight: bolder;
+            background-color: $primary;
+            margin-top: 20px;
+
+            &.current {
+                padding: 10px 20px;
+                position: absolute;
+                left: 0;
+                top: -40px;
+            }
+
+            &.load {
+                padding: 10px 40px;
+            }
         }
     }
 }
