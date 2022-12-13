@@ -159,12 +159,13 @@ footer {
                 .bg-logo {
                     width: 40%;
                     height: 40%;
-                    object-fit: cover;
                     overflow: hidden;
 
 
                     img {
-                        justify-self: end;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                         height: 100%;
                     }
                 }
