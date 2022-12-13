@@ -92,7 +92,7 @@ export default {
                 </div>
 
                 <div class="bg-logo">
-                    <img src="../../public/img/dc-logo-bg.png" alt="">
+                    <img src="/img/dc-logo-bg.png" alt="">
                 </div>
 
 
