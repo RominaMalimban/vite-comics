@@ -67,10 +67,12 @@ export default {
     <header>
         <div class="container">
 
+            <!-- logo -->
             <a href="#" class="logo">
                 <img :src="logo" alt="logo">
             </a>
 
+            <!-- nav bar -->
             <nav>
                 <ul>
                     <li v-for="(link, index) in links" :key="index">
@@ -96,7 +98,7 @@ header {
 
     .container {
         height: 100%;
-        @include space-between;
+        @include flex ($type: 'both');
 
         .logo {
             display: flex;

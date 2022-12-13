@@ -1,10 +1,18 @@
-@mixin space-between() {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+// REGOLE FLEX: 
 
-@mixin center {
+@mixin flex ($type) {
     display: flex;
-    align-items: center;
+
+    @if $type =='between' {
+        justify-content: space-between;
+    }
+
+    @else if $type =='center' {
+        align-items: center;
+    }
+
+    @else if $type =='both' {
+        justify-content: space-between;
+        align-items: center;
+    }
 }

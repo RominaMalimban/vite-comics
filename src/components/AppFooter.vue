@@ -57,6 +57,8 @@ export default {
         <section class="links">
             <div class="container">
                 <div class="cols">
+
+                    <!-- colonna sx -->
                     <div class="col">
                         <h3>DC COMICS</h3>
                         <ul>
@@ -73,6 +75,7 @@ export default {
                         </ul>
                     </div>
 
+                    <!-- colonna centrale -->
                     <div class="col center">
                         <h3>DC</h3>
                         <ul>
@@ -82,6 +85,7 @@ export default {
                         </ul>
                     </div>
 
+                    <!-- colonna sx -->
                     <div class="col">
                         <h3>SITES</h3>
                         <ul>
@@ -92,11 +96,9 @@ export default {
                     </div>
                 </div>
 
-
                 <div class="bg-logo">
                     <img src="/img/dc-logo-bg.png" alt="">
                 </div>
-
 
             </div>
 
@@ -139,7 +141,7 @@ footer {
         color: $text-white;
 
         .container {
-            @include space-between;
+            @include flex ($type: 'both');
             position: relative;
             overflow: hidden;
 
@@ -184,7 +186,7 @@ footer {
         background-color: #303030;
 
         .container {
-            @include space-between;
+            @include flex ($type : 'both');
             height: 100%;
 
             .sign-up {
@@ -194,10 +196,10 @@ footer {
             }
 
             .social {
-                @include center;
+                @include flex ($type: 'center');
 
                 ul {
-                    @include center;
+                    @include flex ($type: 'center');
 
                     li {
                         padding: 0 10px;

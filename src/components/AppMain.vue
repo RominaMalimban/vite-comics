@@ -122,14 +122,13 @@ main {
             display: flex;
             flex-wrap: wrap;
             margin-inline: -15px;
-
         }
 
         .button {
             display: inline-block;
             color: $text-white;
-            font-weight: bolder;
             background-color: $primary;
+            font-weight: bolder;
             margin-top: 20px;
 
             &.current {

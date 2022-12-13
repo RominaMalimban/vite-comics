@@ -57,12 +57,12 @@ export default {
     height: 125px;
 
     .container {
-        @include space-between;
+        @include flex ($type: 'both');
         height: 100%;
         padding: 10px 40px;
 
         li {
-            @include center;
+            @include flex ($type: 'center');
             padding-inline: 10px;
 
             img {
