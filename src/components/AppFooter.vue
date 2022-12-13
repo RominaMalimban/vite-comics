@@ -56,6 +56,10 @@ export default {
         <!-- section 1 -->
         <section class="links">
             <div class="container">
+
+                <div>
+
+                </div>
                 <div class="col">
                     <h3>DC COMICS</h3>
                     <ul>
@@ -90,8 +94,10 @@ export default {
                     </ul>
                 </div>
 
-                <div class="bg-logo">
+                <div class="logo-bg">
+
                 </div>
+
 
             </div>
 
@@ -128,7 +134,7 @@ footer {
 
     // SECTION 1
     .links {
-        background-image: url(../../public/img/footer-bg.jpg);
+        background-image: url(/img/footer-bg.jpg);
         background-size: cover;
         color: $text-white;
 
@@ -153,14 +159,12 @@ footer {
                 }
             }
 
-            .bg-logo {
-                width: 100%;
+            .logo-bg {
+                width: 50%;
                 height: 100%;
-                position: absolute;
                 background-image: url(../../public/img/dc-logo-bg.png);
-                background-repeat: no-repeat;
-                right: -250px;
-                background-position: 50%;
+                // debug
+                border: 1px solid white;
             }
         }
 

@@ -13,7 +13,7 @@ export default {
                 {
                     text: "COMICS",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     text: "MOVIES",
@@ -73,7 +73,11 @@ export default {
 
             <nav>
                 <ul>
-                    <li v-for="link in links"><a href="#">{{ link.text }}</a></li>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a :href="link.url" :class="{ active: link.current }">
+                            {{ link.text }}
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -112,7 +116,8 @@ header {
                 font-size: $font-medium;
                 padding-inline: 15px;
 
-                &:hover {
+                &:hover,
+                &.active {
                     border-bottom: 4px solid $primary;
                 }
 
